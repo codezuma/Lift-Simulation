@@ -9,62 +9,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600&display=swap" rel="stylesheet"></head>
 <body>
     <div id="root">
-        <div class="modal-container close"> 
-          <section class="modal close">
+        <div class="modal-container "> 
+          <form id="simulation-form" class="modal ">
             <div class=" form-control">
                 <label>Number of Lifts</label>
-                <input type="number" class="">
+                <input name="number-of-lifts" min="1" type="number" value="0" class="">
             </div>
             <div class="mt-md form-control">
                 <label>Number of Floors</label>
-                <input type="number" class="">
+                <input name="number-of-floors" min="2"  type="number" value="0" class="">
             </div>
             <button class="button mt-md">Create a Simulation</button>
-          </section>
+          </form>
        </div>
         
-        <div class="lift-simulation-container">
+        <div class="lift-simulation-container close">
             <section class="lift-button-container">
-                <div class="button-wrapper ">
-                    <section class="button-set flex  items-center gap-md">
-                        <button class="button lift-button">
-                            <img  src="/assets/icons/down.svg" alt="">
-                        </button>
-                        <button class="button lift-button">
-                            <img src="/assets/icons/down.svg" alt="">
-                        </button>
-                    </section>
-                    <section class="button-set items-center flex gap-md">
-                        <button class="button lift-button">
-                            <img  src="/assets/icons/down.svg" alt="">
-                        </button>
-                        <button class="button lift-button">
-                            <img src="/assets/icons/down.svg" alt="">
-                        </button>
-                    </section>
-                    <section class="button-set items-center flex gap-md">
-                        <button class="button lift-button">
-                            <img  src="/assets/icons/down.svg" alt="">
-                        </button>
-                        <button class="button lift-button">
-                            <img src="/assets/icons/down.svg" alt="">
-                        </button>
-                    </section>
+                <div id="lift-button-wrapper" class="button-wrapper ">          
                 </div>
             </section>
-            <section class="elevator-container">
-                   <div class="elevator-wrapper">
-                      <div class="elevator open">
-                        <span class="door door-1"></span>
-                        <span class="door door-2"></span>
-                      </div>
-                   </div>
+            <section id="elevator-container" class="elevator-container">
+                  
             </section>
         </div>
     </div>
  
 </body>
-<script src="./js/main.js"></script>
+<script type="module" src="./js/main.js"></script>
         </section>
         </section>
 </html> 
